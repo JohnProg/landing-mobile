@@ -1,0 +1,111 @@
+@import "mixins",
+        "variables",
+        "fonts",
+        "layout",
+        "general";
+
+a {
+  text-decoration: none;
+}
+
+section, footer {
+  min-height: 800px;
+}
+
+section div {
+  width: 50%;
+}
+
+nav, footer, .home {
+  padding: 0 10%;
+}
+
+.btn-border-radius {
+  height: 42px;
+  min-height: 22px;
+  width: 165px;
+  border: solid rgba(255, 255, 255, 1) 1px;
+  border-radius: 50px;
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+
+.btn-border-radius:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-border-radius span {
+  margin-right: 10px;
+  font-size: 16px;
+  color: $white;
+}
+
+.section-image {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-size: contain;
+  background-position-x: 20%;
+}
+
+.main-image {
+  background-image: url("./../img/img-home.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo-link {
+  font-size: 3em;
+  color: $white;
+}
+
+.bg-img-1 {
+  background-image: url("./../img/img-1.png");
+}
+
+.bg-img-2 {
+  background-image: url("./../img/img-2.png");
+}
+
+.bg-img-3 {
+  background-image: url("./../img/img-3.png");
+}
+
+.bg-img-4 {
+  background-image: url("./../img/img-4.png");
+}
+
+@media (max-width: 1160px) {
+  .main-image {
+    background-position: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-image {
+    background-position-y: center;
+    background-size: 40%;
+    background-position-x: 5%;
+  }
+
+  nav {
+      padding: 0 5%;
+  }
+
+  .home {
+    padding-left: 5%;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding-left: 5%;
+    padding-right: 0;
+  }
+
+  .section-image {
+    background-size: 50%;
+    background-position-x: 3%;
+  }
+}
