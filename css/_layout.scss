@@ -50,7 +50,7 @@ body {
 }
 
 @media (max-width: 768px) {
-.button-container {
+  .button-container {
     @include flex-direction(column);
     @include align-items(center);
     width: 100%;
@@ -58,9 +58,5 @@ body {
     .m-r-10 {
       margin-right: 0;
     }
-  }
-
-  section, footer {
-    min-height: 600px;
   }
 }
