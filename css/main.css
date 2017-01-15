@@ -6,11 +6,17 @@
   font-family: "HelveticaNeueW01-45Ligh";
   src: url("//static.parastorage.com/services/third-party/fonts/Helvetica/Fonts/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix");
   src: url("//static.parastorage.com/services/third-party/fonts/Helvetica/Fonts/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix") format("eot"), url("//static.parastorage.com/services/third-party/fonts/Helvetica/Fonts/530dee22-e3c1-4e9f-bf62-c31d510d9656.woff") format("woff"), url("//static.parastorage.com/services/third-party/fonts/Helvetica/Fonts/688ab72b-4deb-4e15-a088-89166978d469.ttf") format("truetype"), url("//static.parastorage.com/services/third-party/fonts/Helvetica/Fonts/7816f72f-f47e-4715-8cd7-960e3723846a.svg#7816f72f-f47e-4715-8cd7-960e3723846a") format("svg"); }
-body, html {
+body,
+html {
   font-size: 10px;
   font-family: Arial, Helvetica, sans-serif; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 0; }
 
 h1 {
@@ -40,7 +46,8 @@ p {
 * {
   box-sizing: border-box; }
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -49,10 +56,6 @@ html, body {
 body {
   font-size: 1em;
   color: #fff; }
-
-.hidden {
-  display: none;
-  visibility: hidden; }
 
 .flex {
   display: -webkit-box;
@@ -159,31 +162,17 @@ body {
 a {
   text-decoration: none; }
 
-section, footer {
+section,
+footer {
   min-height: 800px; }
 
 section div {
   width: 50%; }
 
-nav, footer, .home {
+nav,
+footer,
+.home {
   padding: 0 10%; }
-
-.btn-border-radius {
-  height: 42px;
-  min-height: 22px;
-  width: 165px;
-  border: solid white 1px;
-  border-radius: 50px;
-  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; }
-
-.btn-border-radius:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.7); }
-
-.btn-border-radius span {
-  margin-right: 10px;
-  font-size: 16px;
-  color: #fff; }
 
 .section-image {
   background-attachment: fixed;
@@ -192,10 +181,8 @@ nav, footer, .home {
   background-size: 30%; }
 
 .main-image {
-  background-image: url("./../img/img-home.png");
-  background-repeat: no-repeat;
-  background-size: 75%;
-  background-position: center; }
+  background: url("./../img/img-home.png") no-repeat center;
+  background-size: 75%; }
 
 .logo-link {
   font-size: 3em;
@@ -220,7 +207,8 @@ nav, footer, .home {
   .section-image {
     background-size: 33%; }
 
-  section, footer {
+  section,
+  footer {
     min-height: 700px; } }
 @media (max-width: 1024px) {
   body > section {

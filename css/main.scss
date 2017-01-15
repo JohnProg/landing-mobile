@@ -8,7 +8,8 @@ a {
   text-decoration: none;
 }
 
-section, footer {
+section,
+footer {
   min-height: 800px;
 }
 
@@ -16,28 +17,10 @@ section div {
   width: 50%;
 }
 
-nav, footer, .home {
+nav,
+footer,
+.home {
   padding: 0 10%;
-}
-
-.btn-border-radius {
-  height: 42px;
-  min-height: 22px;
-  width: 165px;
-  border: solid rgba(255, 255, 255, 1) 1px;
-  border-radius: 50px;
-  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
-}
-
-.btn-border-radius:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.7);
-}
-
-.btn-border-radius span {
-  margin-right: 10px;
-  font-size: 16px;
-  color: $white;
 }
 
 .section-image {
@@ -48,10 +31,8 @@ nav, footer, .home {
 }
 
 .main-image {
-  background-image: url("./../img/img-home.png");
-  background-repeat: no-repeat;
+  background: url("./../img/img-home.png") no-repeat center;
   background-size: 75%;
-  background-position: center;
 }
 
 .logo-link {
@@ -84,7 +65,8 @@ nav, footer, .home {
     background-size: 33%;
   }
 
-  section, footer {
+  section,
+  footer {
     min-height: 700px;
   }
 }
