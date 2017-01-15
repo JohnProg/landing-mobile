@@ -188,15 +188,14 @@ nav, footer, .home {
 .section-image {
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position-y: center;
-  background-size: 30%;
-  background-position-x: 20%; }
+  background-position: 20% center;
+  background-size: 30%; }
 
 .main-image {
   background-image: url("./../img/img-home.png");
   background-repeat: no-repeat;
   background-size: 75%;
-  background-position-x: center; }
+  background-position: center; }
 
 .logo-link {
   font-size: 3em;
@@ -216,7 +215,6 @@ nav, footer, .home {
 
 @media (max-width: 1260px) {
   .main-image {
-    background-position: center;
     background-size: 80%; }
 
   .section-image {
@@ -225,10 +223,15 @@ nav, footer, .home {
   section, footer {
     min-height: 700px; } }
 @media (max-width: 1024px) {
+  body > section {
+    text-align: center; }
+    body > section:nth-child(odd) {
+      flex-direction: row-reverse; }
+
   .section-image {
-    background-position-y: center;
-    background-size: 40%;
-    background-position-x: 5%; }
+    background-position: center;
+    background-size: 75%;
+    background-attachment: local; }
 
   nav {
     padding: 0 5%; }
@@ -240,9 +243,10 @@ nav, footer, .home {
   .home {
     padding-left: 5%;
     padding-right: 0; }
+    .home h1 {
+      display: none; }
 
   .section-image {
-    background-size: 50%;
-    background-position-x: 3%; } }
+    background-size: 90%; } }
 
 /*# sourceMappingURL=main.css.map */
