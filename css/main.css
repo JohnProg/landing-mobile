@@ -6,11 +6,17 @@
   font-family: "HelveticaNeueW01-45Ligh";
   src: url("//static.parastorage.com/services/third-party/fonts/Helvetica/Fonts/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix");
   src: url("//static.parastorage.com/services/third-party/fonts/Helvetica/Fonts/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix") format("eot"), url("//static.parastorage.com/services/third-party/fonts/Helvetica/Fonts/530dee22-e3c1-4e9f-bf62-c31d510d9656.woff") format("woff"), url("//static.parastorage.com/services/third-party/fonts/Helvetica/Fonts/688ab72b-4deb-4e15-a088-89166978d469.ttf") format("truetype"), url("//static.parastorage.com/services/third-party/fonts/Helvetica/Fonts/7816f72f-f47e-4715-8cd7-960e3723846a.svg#7816f72f-f47e-4715-8cd7-960e3723846a") format("svg"); }
-body, html {
+body,
+html {
   font-size: 10px;
   font-family: Arial, Helvetica, sans-serif; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 0; }
 
 h1 {
@@ -40,7 +46,8 @@ p {
 * {
   box-sizing: border-box; }
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -49,10 +56,6 @@ html, body {
 body {
   font-size: 1em;
   color: #fff; }
-
-.hidden {
-  display: none;
-  visibility: hidden; }
 
 .flex {
   display: -webkit-box;
@@ -125,10 +128,7 @@ body {
     align-items: center;
     width: 100%; }
     .button-container .m-r-10 {
-      margin-right: 0; }
-
-  section, footer {
-    min-height: 600px; } }
+      margin-right: 0; } }
 .m-r-10 {
   margin-right: 10px; }
 
@@ -162,43 +162,27 @@ body {
 a {
   text-decoration: none; }
 
-section, footer {
+section,
+footer {
   min-height: 800px; }
 
 section div {
   width: 50%; }
 
-nav, footer, .home {
+nav,
+footer,
+.home {
   padding: 0 10%; }
-
-.btn-border-radius {
-  height: 42px;
-  min-height: 22px;
-  width: 165px;
-  border: solid white 1px;
-  border-radius: 50px;
-  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; }
-
-.btn-border-radius:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.7); }
-
-.btn-border-radius span {
-  margin-right: 10px;
-  font-size: 16px;
-  color: #fff; }
 
 .section-image {
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position-y: 0;
-  background-size: contain;
-  background-position-x: 20%; }
+  background-position: 20% center;
+  background-size: 30%; }
 
 .main-image {
-  background-image: url("./../img/img-home.png");
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background: url("./../img/img-home.png") no-repeat center;
+  background-size: 75%; }
 
 .logo-link {
   font-size: 3em;
@@ -216,14 +200,26 @@ nav, footer, .home {
 .bg-img-4 {
   background-image: url("./../img/img-4.png"); }
 
-@media (max-width: 1160px) {
+@media (max-width: 1260px) {
   .main-image {
-    background-position: center; } }
-@media (max-width: 1024px) {
+    background-size: 80%; }
+
   .section-image {
-    background-position-y: center;
-    background-size: 40%;
-    background-position-x: 5%; }
+    background-size: 33%; }
+
+  section,
+  footer {
+    min-height: 700px; } }
+@media (max-width: 1024px) {
+  body > section {
+    text-align: center; }
+    body > section:nth-child(odd) {
+      flex-direction: row-reverse; }
+
+  .section-image {
+    background-position: center;
+    background-size: 75%;
+    background-attachment: local; }
 
   nav {
     padding: 0 5%; }
@@ -235,9 +231,10 @@ nav, footer, .home {
   .home {
     padding-left: 5%;
     padding-right: 0; }
+    .home h1 {
+      display: none; }
 
   .section-image {
-    background-size: 50%;
-    background-position-x: 3%; } }
+    background-size: 90%; } }
 
 /*# sourceMappingURL=main.css.map */

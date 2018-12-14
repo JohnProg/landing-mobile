@@ -8,7 +8,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -18,11 +19,6 @@ html, body {
 body {
   font-size: 1em;
   color: $white;
-}
-
-.hidden {
-  display: none;
-  visibility: hidden;
 }
 
 .flex {
@@ -50,7 +46,7 @@ body {
 }
 
 @media (max-width: 768px) {
-.button-container {
+  .button-container {
     @include flex-direction(column);
     @include align-items(center);
     width: 100%;
@@ -58,9 +54,5 @@ body {
     .m-r-10 {
       margin-right: 0;
     }
-  }
-
-  section, footer {
-    min-height: 600px;
   }
 }
